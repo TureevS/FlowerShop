@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProductController">
+   <children>
+      <Button fx:id="prPageMenuButton" layoutX="1361.0" layoutY="46.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="129.0" style="-fx-background-color: E5E5E5;" stylesheets="@Style.css" text="≡" textFill="#007439" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="74.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="bouquetsMenuPane" layoutX="1080.0" layoutY="264.0" prefHeight="589.0" prefWidth="378.0" style="-fx-background-color: FFFFFF; -fx-border-color: #007439; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="bouquetsTitleTextField" layoutX="96.0" layoutY="50.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForDelBouquetsTextField" layoutX="96.0" layoutY="270.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="25.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="62.236328125" />
+            <Text layoutX="38.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="36.236328125" />
+            <Text layoutX="50.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <Button fx:id="bouquetsAddButton" layoutX="26.0" layoutY="170.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="bouquetsDelButton" layoutX="26.0" layoutY="310.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Удалить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#666666" layoutX="134.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление" wrappingWidth="113.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#666666" layoutX="140.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удаление" wrappingWidth="89.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="239.0" layoutX="130.0" layoutY="220.0" startX="-120.0" stroke="#007439" />
+            <Line endX="239.0" layoutX="130.0" layoutY="360.0" startX="-120.0" stroke="#007439" />
+            <Text fill="#666666" layoutX="145.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение" wrappingWidth="105.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bouquetsTitleEditTextField" layoutX="96.0" layoutY="410.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="28.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="38.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="36.236328125" />
+            <Button fx:id="bouquetsEditButton" layoutX="26.0" layoutY="530.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Изменить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="bouquetsPriceEditTextField" layoutX="96.0" layoutY="450.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="bouquetsPriceTextField" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForEditBouquetsTextField" layoutX="247.0" layoutY="490.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="220.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="18.236328125" />
+            <TextField fx:id="bouquetsShopIdEditTextField" layoutX="101.0" layoutY="490.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="25.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <TextField fx:id="bouquetsShopIdTextField" layoutX="96.0" layoutY="130.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="19.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bouquetsPane" layoutY="262.0" prefHeight="648.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;">
+         <children>
+            <TableView fx:id="bouquetsTable" layoutX="166.0" layoutY="30.0" prefHeight="560.0" prefWidth="879.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@table.css">
+              <columns>
+                <TableColumn fx:id="bouquetsIdColumn" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="bouquetsTitleColumn" prefWidth="491.0" text="Название" />
+                  <TableColumn fx:id="bouquetsPriceColumn" prefWidth="220.0" text="Цена" />
+                  <TableColumn fx:id="bouquetsShopIdColumn" prefWidth="117.0" text="ID магазина" />
+              </columns>
+            </TableView>
+            <Button fx:id="bouquetsUpdate" layoutX="166.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Обновить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="servMenuPane" layoutX="1080.0" layoutY="264.0" prefHeight="589.0" prefWidth="378.0" style="-fx-background-color: FFFFFF; -fx-border-color: #007439; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="servTitleTextField" layoutX="96.0" layoutY="50.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForDelServicesTextField" layoutX="96.0" layoutY="272.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="23.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="36.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Text layoutX="51.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <Button fx:id="servAddButton" layoutX="26.0" layoutY="170.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="servDelButton" layoutX="26.0" layoutY="312.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Удалить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#666666" layoutX="134.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление" wrappingWidth="113.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#666666" layoutX="141.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удаление" wrappingWidth="89.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="239.0" layoutX="131.0" layoutY="222.0" startX="-120.0" stroke="#007439" />
+            <Line endX="239.0" layoutX="131.0" layoutY="362.0" startX="-120.0" stroke="#007439" />
+            <Text fill="#666666" layoutX="146.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение" wrappingWidth="105.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="servTitleEditTextField" layoutX="96.0" layoutY="412.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="29.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="42.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Button fx:id="servEditButton" layoutX="26.0" layoutY="532.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Изменить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="servPriceEditTextField" layoutX="96.0" layoutY="452.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="servPriceTextField" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForEditServicesTextField" layoutX="247.0" layoutY="492.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="224.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <TextField fx:id="servShopIdEditTextField" layoutX="96.0" layoutY="492.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="20.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <TextField fx:id="servShopIdTextField" layoutX="96.0" layoutY="130.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="14.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="servicesPane" layoutY="262.0" prefHeight="648.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;">
+         <children>
+            <TableView fx:id="serviceTable" layoutX="166.0" layoutY="30.0" prefHeight="560.0" prefWidth="879.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@table.css">
+               <columns>
+                  <TableColumn fx:id="servIdColumn" prefWidth="62.0" text="ID" />
+                  <TableColumn fx:id="servTitleColumn" prefWidth="414.0" text="Название" />
+                  <TableColumn fx:id="servPriceColumn" prefWidth="248.0" text="Цена" />
+                  <TableColumn fx:id="servShopIdColumn" prefWidth="154.0" text="ID магазина" />
+               </columns></TableView>
+            <Button fx:id="servUpdate" layoutX="166.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Обновить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="flowToOrderMenuPane" layoutX="1080.0" layoutY="143.0" prefHeight="747.0" prefWidth="378.0" style="-fx-background-color: FFFFFF; -fx-border-color: #007439; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="quantityFTOTextField" layoutX="96.0" layoutY="130.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="TitleFTOTextField" layoutX="96.0" layoutY="50.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="storeIdFTOTextField" layoutX="96.0" layoutY="210.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForDelFTOTextField" layoutX="96.0" layoutY="350.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="24.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="34.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="36.236328125" />
+            <Text layoutX="46.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <Text layoutX="15.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" wrappingWidth="74.0" />
+            <Button fx:id="FTOAddButton" layoutX="26.0" layoutY="250.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="FTODelButton" layoutX="26.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Удалить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#666666" layoutX="134.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление" wrappingWidth="113.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#666666" layoutX="134.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удаление" wrappingWidth="89.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="239.0" layoutX="129.0" layoutY="300.0" startX="-120.0" stroke="#007439" />
+            <Line endX="239.0" layoutX="129.0" layoutY="440.0" startX="-120.0" stroke="#007439" />
+            <Text fill="#666666" layoutX="139.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение" wrappingWidth="105.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TitleFTOEditTextField" layoutX="95.0" layoutY="492.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="storeIdFTOEditTextField" layoutX="96.0" layoutY="652.0" prefHeight="25.0" prefWidth="105.0" />
+            <TextField fx:id="quantityFTOEdotTextField" layoutX="95.0" layoutY="572.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="21.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="62.236328125" />
+            <Text layoutX="34.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="36.236328125" />
+            <Text layoutX="15.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" wrappingWidth="74.0" />
+            <Button fx:id="FTOEditButton" layoutX="25.0" layoutY="692.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Изменить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="priceFTOEditTextField" layoutX="96.0" layoutY="532.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="priceFTOTextField" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="15.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <Text layoutX="15.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <TextField fx:id="idFTOForEditTextField" layoutX="244.0" layoutY="652.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="223.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="18.236328125" />
+            <TextField fx:id="suppIdFTOTextField" layoutX="97.0" layoutY="170.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="11.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID поставщика" wrappingWidth="81.00000000000006" />
+            <TextField fx:id="suppFTOEditTextField" layoutX="95.0" layoutY="612.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="8.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID поставщика" wrappingWidth="89.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="additionalMenuPane" layoutX="1080.0" layoutY="264.0" prefHeight="589.0" prefWidth="378.0" style="-fx-background-color: FFFFFF; -fx-border-color: #007439; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="additionalTitleTextField" layoutX="96.0" layoutY="50.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="additionalStoreTextField" layoutX="96.0" layoutY="130.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="additionalIdForDelTextField" layoutX="96.0" layoutY="270.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="24.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="37.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Text layoutX="46.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <Button fx:id="additionalAddButton" layoutX="26.0" layoutY="170.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="additionalDelButton" layoutX="26.0" layoutY="310.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Удалить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#666666" layoutX="134.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление" wrappingWidth="113.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#666666" layoutX="144.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удаление" wrappingWidth="89.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="239.0" layoutX="129.0" layoutY="220.0" startX="-120.0" stroke="#007439" />
+            <Line endX="239.0" layoutX="129.0" layoutY="360.0" startX="-120.0" stroke="#007439" />
+            <Text fill="#666666" layoutX="140.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение" wrappingWidth="105.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="additionalTitleEditTextField" layoutX="96.0" layoutY="410.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="additionalStoreEditTextField" layoutX="97.0" layoutY="490.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="24.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="37.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Button fx:id="additionalEditButton" layoutX="26.0" layoutY="530.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Изменить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="additionalPriceEditTextField" layoutX="97.0" layoutY="450.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="additionalPriceTextField" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="15.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <Text layoutX="15.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <TextField fx:id="additionalIdForEditTextField" layoutX="245.0" layoutY="490.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="224.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="18.236328125" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="additionalProductPane" layoutY="262.0" prefHeight="638.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;">
+         <children>
+            <TableView fx:id="additionalProductTable" layoutX="166.0" layoutY="30.0" prefHeight="560.0" prefWidth="879.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@table.css">
+               <columns>
+                  <TableColumn fx:id="additionalIdColumn" prefWidth="48.0" text="ID" />
+                  <TableColumn fx:id="additionalTitleColumn" prefWidth="373.0" text="Название" />
+                  <TableColumn fx:id="additionalPriceColumn" prefWidth="348.0" text="Cтоимость" />
+                  <TableColumn fx:id="additionalShopIdColumn" prefWidth="109.0" text="ID Магазина" />
+               </columns>
+            </TableView>
+            <Button fx:id="additionalUpdate" layoutX="166.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Обновить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="flowInOrderPane" layoutY="262.0" prefHeight="638.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;" stylesheets="@table.css">
+         <children>
+            <TableView fx:id="flowInOrderTable" layoutX="166.0" layoutY="30.0" prefHeight="560.0" prefWidth="879.0" style="-fx-border-radius: 10; -fx-background-radius: 10;">
+               <columns>
+                  <TableColumn fx:id="idFTOColumn" prefWidth="37.0" text="ID" />
+                  <TableColumn fx:id="titleFTOColumn" prefWidth="208.0" text="Название" />
+                  <TableColumn fx:id="priceFTOColumn" prefWidth="183.0" text="Цена" />
+                  <TableColumn fx:id="quantityFTOColumn" prefWidth="149.0" text="Количество" />
+                  <TableColumn fx:id="idSupFTOColumn" prefWidth="161.0" text="ID поставщика" />
+                  <TableColumn fx:id="shopIdFTOColumn" prefWidth="140.0" text="ID магазина" />
+               </columns>
+            </TableView>
+            <Button fx:id="flowToOrderUpdate" layoutX="166.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Обновить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fill="#007439" layoutX="165.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Товары">
+         <font>
+            <Font name="Tahoma Bold" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="PrPageStaffButton" layoutX="439.0" layoutY="91.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="209.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Сотрудники" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="PrPagedeliveriesButton" layoutX="666.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Поставки" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="PrPagebookkeepingButton" layoutX="855.0" layoutY="93.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="225.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Бухгалтерия" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="flowInStockButton" layoutX="154.0" layoutY="216.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="209.0" style="-fx-background-color: E5E5E5; -fx-text-fill: #007439;" stylesheets="@styleForContent.css" text="Цветы в наличии" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="flowOrderButton" layoutX="390.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Цветы на заказ" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="bouquetsButton" layoutX="603.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Букеты" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="servicesButton" layoutX="733.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Услуги" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="additionalProductButton" layoutX="858.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: E5E5E5;" stylesheets="@styleForContent.css" text="Дополнительно" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="flowInStockPane" layoutY="262.0" prefHeight="638.0" prefWidth="1600.0" style="-fx-background-color: #E5E5E5;">
+         <children>
+            <TableView fx:id="flowInStockTable" layoutX="166.0" layoutY="30.0" prefHeight="560.0" prefWidth="879.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@table.css">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="53.0" text="ID" />
+                <TableColumn fx:id="titleColumn" prefWidth="328.0" text="Название" />
+                  <TableColumn fx:id="priceColumn" prefWidth="173.0" text="Цена" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="219.0" text="Количество" />
+                  <TableColumn fx:id="storeColumn" prefWidth="105.0" text="ID магазина" />
+              </columns>
+            </TableView>
+            <Button fx:id="productUpdate" layoutX="166.0" layoutY="3.0" mnemonicParsing="false" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Обновить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="flowInStockMenuPane" layoutX="1080.0" layoutY="160.0" prefHeight="693.0" prefWidth="378.0" style="-fx-background-color: FFFFFF; -fx-border-color: #007439; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="quantityTextField" layoutX="96.0" layoutY="130.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="TitleTextField" layoutX="96.0" layoutY="50.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="storeTextField" layoutX="96.0" layoutY="170.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="idForDelTextField" layoutX="96.0" layoutY="320.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="21.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="62.236328125" />
+            <Text layoutX="32.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Text layoutX="46.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="12.236328125" />
+            <Text layoutX="15.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" wrappingWidth="74.0" />
+            <Button fx:id="PrPageAddButton" layoutX="26.0" layoutY="210.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="PrPageDelButton" layoutX="26.0" layoutY="360.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2;" stylesheets="@styleForContent.css" text="Удалить" textFill="#666666">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="#666666" layoutX="134.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление" wrappingWidth="113.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#666666" layoutX="144.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Удаление" wrappingWidth="89.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <Line endX="239.0" layoutX="129.0" layoutY="270.0" startX="-120.0" stroke="#007439" />
+            <Line endX="239.0" layoutX="129.0" layoutY="420.0" startX="-120.0" stroke="#007439" />
+            <Text fill="#666666" layoutX="140.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменение" wrappingWidth="105.0">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TitleTextField2" layoutX="96.0" layoutY="470.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="storeTextField2" layoutX="97.0" layoutY="590.0" prefHeight="25.0" prefWidth="105.0" />
+            <TextField fx:id="quantityTextField2" layoutX="96.0" layoutY="550.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="24.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название" wrappingWidth="56.236328125" />
+            <Text layoutX="37.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" wrappingWidth="29.236328125" />
+            <Text layoutX="15.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество" wrappingWidth="74.0" />
+            <Button fx:id="PrPageEditButton" layoutX="26.0" layoutY="630.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="326.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 10; -fx-border-width: 2; -fx-background-radius: 10;" stylesheets="@styleForContent.css" text="Изменить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="priceTextField2" layoutX="97.0" layoutY="510.0" prefHeight="25.0" prefWidth="255.0" />
+            <TextField fx:id="priceTextField" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="255.0" />
+            <Text layoutX="15.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <Text layoutX="15.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID магазина" wrappingWidth="74.0" />
+            <TextField fx:id="idForEditTextField" layoutX="245.0" layoutY="590.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="224.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="18.236328125" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
