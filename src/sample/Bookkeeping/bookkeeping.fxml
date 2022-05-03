@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1064.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Bookkeeping.bookkeepingController">
+   <children>
+      <TextField fx:id="searchTextField" layoutX="201.0" layoutY="148.0" prefHeight="32.0" prefWidth="178.0" promptText="Поиск" />
+      <DatePicker fx:id="revenueDatePick" layoutX="611.0" layoutY="148.0" prefHeight="32.0" prefWidth="178.0" />
+      <Text fill="#007439" layoutX="699.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Бухгалтерия">
+         <font>
+            <Font name="Tahoma Bold" size="38.0" />
+         </font>
+      </Text>
+      <Button fx:id="employeesButton" layoutX="275.0" layoutY="48.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="209.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Сотрудники" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="productsButton" layoutX="108.0" layoutY="48.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="152.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Товары" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="shopsButton" layoutX="497.0" layoutY="48.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="185.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Магазины" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="bkPageMenuButton" layoutX="1375.0" layoutY="48.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="129.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/Style.css" text="≡" textFill="#007439" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="74.0" />
+         </font>
+      </Button>
+      <TableView fx:id="checksTable" layoutX="200.0" layoutY="180.0" prefHeight="520.0" prefWidth="821.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@../CSS/table.css">
+         <columns>
+            <TableColumn fx:id="productsColumn" prefWidth="178.0" text="Товар" />
+            <TableColumn fx:id="quantityColumn" prefWidth="102.0" text="Количество" />
+            <TableColumn fx:id="dateColumn" prefWidth="131.0" text="Дата" />
+            <TableColumn fx:id="employeesColumn" prefWidth="178.0" text="Сотрудник" />
+            <TableColumn fx:id="shopsColumn" prefWidth="231.0" text="Магазин" />
+         </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="35.0" layoutY="204.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Добавление" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="35.0" layoutY="228.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Удаление" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchButton" layoutX="35.0" layoutY="252.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Поиск" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#007439" layoutX="72.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню" wrappingWidth="56.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Separator layoutX="49.0" layoutY="276.0" prefHeight="5.0" prefWidth="102.0" />
+      <DatePicker fx:id="datePick" layoutX="481.0" layoutY="148.0" prefHeight="32.0" prefWidth="130.0" />
+      <Button fx:id="activeButton" layoutX="935.0" layoutY="148.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 3; -fx-border-width: 2; -fx-background-radius: 3;" stylesheets="@../CSS/styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="quantityTextField" layoutX="379.0" layoutY="148.0" prefHeight="32.0" prefWidth="102.0" promptText="Количество" />
+      <ComboBox fx:id="shopsChoiceBox" layoutX="789.0" layoutY="148.0" prefHeight="32.0" prefWidth="146.0" promptText="Выберите магазин" />
+      <ComboBox fx:id="employeesChoiceBox" layoutX="611.0" layoutY="148.0" prefHeight="32.0" prefWidth="178.0" promptText="Выберите сотрудника" />
+      <ComboBox fx:id="productsChoiceBox" layoutX="201.0" layoutY="148.0" prefHeight="32.0" prefWidth="178.0" promptText="Выберите товар" />
+      <Label fx:id="incomeLabel" layoutX="14.0" layoutY="409.0" prefHeight="24.0" prefWidth="172.0" text="доход" />
+      <Label fx:id="profitLabel" layoutX="14.0" layoutY="433.0" prefHeight="24.0" prefWidth="172.0" text="Прибыль:" />
+      <Label fx:id="profitabilityLabel" layoutX="14.0" layoutY="457.0" prefHeight="24.0" prefWidth="172.0" text="Рентабельность:" />
+      <Label fx:id="revenueLabel" layoutX="15.0" layoutY="336.0" prefHeight="24.0" prefWidth="178.0" text="выручка" />
+      <Button fx:id="saveButton" layoutX="919.0" layoutY="700.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Сохранить " textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="revenuePerDayButton" layoutX="1.0" layoutY="281.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="200.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Выручка за день" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="employeeLabel" layoutX="15.0" layoutY="360.0" prefHeight="24.0" prefWidth="172.0" text="Сотрудник:" />
+      <Button fx:id="revenueButton" layoutX="1.0" layoutY="305.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="200.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Выручка за период" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="averageIncomeLabel" layoutX="14.0" layoutY="384.0" prefHeight="24.0" prefWidth="172.0" text="Средний доход магазина" textFill="#666666">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

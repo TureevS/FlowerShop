@@ -8,5 +8,27 @@
     <orderEntry type="jdk" jdkName="18" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="javafx" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="ooxml-lib" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Applications/poi-bin-5.2.2" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-examples-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-excelant-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-ooxml-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-ooxml-full-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-ooxml-lite-5.2.2.jar!/" />
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-scratchpad-5.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://C:/Applications/poi-bin-5.2.2/poi-javadoc-5.2.2.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://C:/Applications/poi-bin-5.2.2" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

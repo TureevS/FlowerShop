@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1064.0" style="-fx-background-color: #E5E5E5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Shops.shopsController">
+   <children>
+      <TextField fx:id="searchTextField" layoutX="130.0" layoutY="148.0" prefHeight="32.0" prefWidth="200.0" promptText="Поиск" />
+      <Text fill="#007439" layoutX="532.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Магазины">
+         <font>
+            <Font name="Tahoma Bold" size="38.0" />
+         </font>
+      </Text>
+      <Button fx:id="employeesButton" layoutX="293.0" layoutY="48.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="209.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Сотрудники" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="productsButton" layoutX="124.0" layoutY="48.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="152.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Товары" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="bookkeepingButton" layoutX="754.0" layoutY="48.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="225.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Бухгалтерия" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Forte" size="30.0" />
+         </font>
+      </Button>
+      <TableView fx:id="shopsTable" layoutX="130.0" layoutY="180.0" prefHeight="520.0" prefWidth="821.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" stylesheets="@../CSS/table.css">
+        <columns>
+          <TableColumn fx:id="shopNameColumn" prefWidth="371.0" text="Название" />
+            <TableColumn fx:id="rentColumn" prefWidth="449.0" text="Арендная плата в месяц" />
+        </columns>
+      </TableView>
+      <TextField fx:id="shopNameTextField" layoutX="130.0" layoutY="148.0" prefHeight="32.0" prefWidth="372.0" promptText="Введите название магазина" />
+      <TextField fx:id="rentTextField" layoutX="501.0" layoutY="148.0" prefHeight="32.0" prefWidth="365.0" promptText="Введите арендную плату в рублях" />
+      <Button fx:id="activeButton" layoutX="866.0" layoutY="148.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: FFFFFF; -fx-border-color: #666666; -fx-border-radius: 3; -fx-border-width: 2; -fx-background-radius: 3;" stylesheets="@../CSS/styleForContent.css" text="Добавить" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="addButton" layoutY="204.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Добавление" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutY="228.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Удаление" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchButton" layoutY="252.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="130.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Поиск" textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#007439" layoutX="37.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню" wrappingWidth="56.0">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="saveButton" layoutX="849.0" layoutY="700.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: E5E5E5;" stylesheets="@../CSS/styleForContent.css" text="Сохранить " textFill="#666666" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Tahoma Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

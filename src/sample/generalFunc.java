@@ -1,36 +1,21 @@
 package sample;
 
-import javafx.fxml.FXML;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-public class MainController {
-
-    @FXML
-    private Button productButton;
-    @FXML
-    private Button deliveriesButton;
-    @FXML
-    private Button staffButton;
-    @FXML
-    private Button bookkeepingButton;
-
-    @FXML
-    void initialize() {
-
-        productButton.setOnAction(event -> open("/sample/Products/product.fxml", productButton));
-        deliveriesButton.setOnAction(event -> open("/sample/Shops/shops.fxml", deliveriesButton));
-        staffButton.setOnAction(event -> open("/sample/Employees/employees.fxml", staffButton));
-        bookkeepingButton.setOnAction(event -> open("/sample/Bookkeeping/bookkeeping.fxml", bookkeepingButton));
-    }
-
-    private void open(String w, Button b) {
+public class generalFunc {
+    DatabaseHandler dbHandler = new DatabaseHandler();
+    public void open(String w, Button b) {
         Stage stage = (Stage) b.getScene().getWindow();
 
         stage.close();
@@ -47,5 +32,14 @@ public class MainController {
         assert root1 != null;
         stage.setScene(new Scene(root1));
         stage.show();
+    }
+
+    public void updateChoiceBox(String column, String table, ComboBox<String> ChoiceBox) throws SQLException, ClassNotFoundException {
+        ResultSet rs = dbHandler.selectData("SELECT " + column + " FROM " + table);
+        ObservableList<String> tmp = FXCollections.observableArrayList();
+        while(rs.next()){
+            tmp.add(rs.getString(1));
+        }
+        ChoiceBox.setItems(tmp);
     }
 }
